@@ -25,9 +25,6 @@
     </div><!-- slider -->
 
 
-
-  
-
     <section class="post-area section">
         <div class="container">
 

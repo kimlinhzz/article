@@ -6,7 +6,6 @@
     <link href="{{ asset('assets/frontend/css/category/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/category/responsive.css') }}" rel="stylesheet">
     <style>
-        
         .favorite_posts{
             color: blue;
         };

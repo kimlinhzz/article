@@ -7,8 +7,8 @@
                 <div class="footer-section">
 
                     {{--<a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>--}}
-                    <p class="copyright">{{ env('APP_NAME') }} @ {{ date('Y') }}. All rights reserved.</p>
-                    <p class="copyright"><strong> Developed &amp; <i class="far fa-heart"></i> by </strong>
+                    <p style="color:whitesmoke"  class="copyright">{{ env('APP_NAME') }} @ {{ date('Y') }}. All rights reserved.</p>
+                    <p style="color:whitesmoke" class="copyright"><strong> Developed &amp; <i class="far fa-heart"></i> by </strong>
                         <a href="https://www.youtube.com/channel/UCwbVAlvrsD2Tpx93bleNbOA" target="_blank">Programming kit</a></p>
                     <ul class="icons">
                         <li><a target="_blank" href="https://www.facebook.com/cip.fahim.me"><i class="ion-social-facebook-outline"></i></a></li>

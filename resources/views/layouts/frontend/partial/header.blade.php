@@ -1,11 +1,11 @@
 <header>
     <div class="container-fluid position-relative no-side-padding">
 
-        <a href="{{ route('home') }}" class="logo">{{ env('APP_NAME') }}</a>
+        <a style="color:whitesmoke" href="{{ route('home') }}" class="logo">{{ env('APP_NAME') }}</a>
 
         <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
-        <ul class="main-menu visible-on-click" id="main-menu">
+        <ul style="color:whitesmoke" class="main-menu visible-on-click" id="main-menu">
             <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('post.index') }}">Posts</a></li>
             @guest
@@ -20,13 +20,13 @@
                 @endif
             @endguest
         </ul><!-- main-menu -->
-
+{{-- 
         <div class="src-area">
             <form method="GET" action="{{ route('search') }}">
                 <button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
                 <input class="src-input" value="{{ isset($query) ? $query : '' }}" name="query" type="text" placeholder="Search">
             </form>
-        </div>
+        </div> --}}
 
     </div><!-- conatiner -->
 </header>

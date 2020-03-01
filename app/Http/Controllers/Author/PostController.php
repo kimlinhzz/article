@@ -94,7 +94,7 @@ class PostController extends Controller
         $post->tags()->attach($request->tags);
 
         $users = User::where('role_id','1')->get();
-        Notification::send($users, new NewAuthorPost($post));
+  // Notification::send($users, new NewAuthorPost($post));
         Toastr::success('Post Successfully Saved :)','Success');
         return redirect()->route('author.post.index');
     }
