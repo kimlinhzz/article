@@ -30,7 +30,7 @@
                             <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                                 <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    <th>3</th>
                                     <th>Name</th>
                                     <th>Post Count</th>
                                     <th>Created At</th>
@@ -126,5 +126,10 @@
                 }
             })
         }
+
+        $(function(){
+            $('.dt-buttons').remove()
+            $("#DataTables_Table_0_filter").html(`<input type="search" class="form-control input-sm" placeholder="Search" aria-controls="DataTables_Table_0">`);
+        })
     </script>
 @endpush

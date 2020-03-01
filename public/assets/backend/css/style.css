@@ -7517,7 +7517,7 @@ fieldset[disabled] .form-control {
     white-space: nowrap;
     position: relative;
     border-bottom: 1px solid #e9e9e9;
-    background: url("../images/user-img-background.jpg") no-repeat no-repeat;
+    background: url("../images/2sphWK.jpg") no-repeat no-repeat;
     height: 135px; }
     .sidebar .user-info .image {
       margin-right: 12px;
@@ -7540,7 +7540,7 @@ fieldset[disabled] .form-control {
         text-overflow: ellipsis;
         overflow: hidden;
         font-size: 14px;
-        max-width: 200px;
+        /* max-width: 200px; */
         color: #fff; }
       .sidebar .user-info .info-container .email {
         white-space: nowrap;
@@ -7549,7 +7549,7 @@ fieldset[disabled] .form-control {
         text-overflow: ellipsis;
         overflow: hidden;
         font-size: 12px;
-        max-width: 200px;
+        /* max-width: 200px; */
         color: #fff; }
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
