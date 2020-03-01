@@ -137,5 +137,10 @@
                 }
             })
         }
+
+        $(function(){
+            $('.dt-buttons').remove()
+            $("#DataTables_Table_0_filter").html(`<input type="search" class="form-control input-sm" placeholder="Search" aria-controls="DataTables_Table_0">`);
+        })
     </script>
 @endpush

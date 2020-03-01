@@ -82,12 +82,13 @@ class PostController extends Controller
         $post->slug = $slug;
         $post->image = $imageName;
         $post->body = $request->body;
-        if(isset($request->status))
-        {
-            $post->status = true;
-        }else {
-            $post->status = false;
-        }
+        // if(isset($request->status))
+        // {
+        //     $post->status = true;
+        // }else {
+        //     $post->status = false;
+        // }
+        $post->status = true;
         $post->is_approved = true;
         $post->save();
 

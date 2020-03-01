@@ -79,7 +79,7 @@
                                     <th>Views</th>
                                     <th>Favorite</th>
                                     <th>Comments</th>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -90,13 +90,13 @@
                                             <td>{{ $post->view_count }}</td>
                                             <td>{{ $post->favorite_to_users_count }}</td>
                                             <td>{{ $post->comments_count }}</td>
-                                            <td>
+                                            {{-- <td>
                                                 @if($post->status == true)
                                                     <span class="label bg-green">Published</span>
                                                 @else
                                                     <span class="label bg-red">Pending</span>
                                                 @endif
-                                            </td>
+                                            </td> --}}
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -116,3 +116,12 @@
     <script src="{{ asset('assets/backend/plugins/jquery-countto/jquery.countTo.js') }}"></script>
     <script src="{{ asset('assets/backend/js/pages/index.js') }}"></script>
 @endpush
+
+<style>
+
+    .menuTextColor {
+
+       color: white; 
+    }
+
+</style>

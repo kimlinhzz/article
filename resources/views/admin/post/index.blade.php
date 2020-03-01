@@ -35,7 +35,7 @@
                                     <th>Author</th>
                                     <th><i class="material-icons">visibility</i></th>
                                     <th>Is Approved</th>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                     <th>Created At</th>
                                     {{--<th>Updated At</th>--}}
                                     <th>Action</th>
@@ -48,7 +48,7 @@
                                     <th>Author</th>
                                     <th><i class="material-icons">visibility</i></th>
                                     <th>Is Approved</th>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                     <th>Created At</th>
                                     {{--<th>Updated At</th>--}}
                                     <th>Action</th>
@@ -68,13 +68,13 @@
                                                     <span class="badge bg-pink">Pending</span>
                                                 @endif
                                             </td>
-                                            <td>
+                                            {{-- <td>
                                                 @if($post->status == true)
                                                     <span class="badge bg-blue">Published</span>
                                                 @else
                                                     <span class="badge bg-pink">Pending</span>
                                                 @endif
-                                            </td>
+                                            </td> --}}
                                             <td>{{ $post->created_at }}</td>
                                             {{--<td>{{ $post->updated_at }}</td>--}}
                                             <td class="text-center">
@@ -150,5 +150,9 @@
                 }
             })
         }
+        $(function(){
+            $('.dt-buttons').remove()
+            $("#DataTables_Table_0_filter").html(`<input type="search" class="form-control input-sm" placeholder="Search" aria-controls="DataTables_Table_0">`);
+        })
     </script>
 @endpush
